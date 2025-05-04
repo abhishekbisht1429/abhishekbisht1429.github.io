@@ -5,7 +5,7 @@ import {
   Palette, 
   Database, 
   Globe, 
-  Tool, 
+  Wrench, 
   Layers,
 } from "lucide-react";
 
@@ -27,7 +27,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Deployment",
-    icon: <Tool className="w-5 h-5" />,
+    icon: <Wrench className="w-5 h-5" />,
     skills: ["Git", "GitHub", "Docker", "Vercel", "Netlify"],
   },
   {
