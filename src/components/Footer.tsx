@@ -6,24 +6,24 @@ const lovable_link = "https://lovable.dev/"
 const socialLinks = [
   { 
     name: "GitHub",
-    href: "https://github.com/yourusername", 
+    href: "https://github.com/abhishekbisht1429",
     icon: <Github className="w-5 h-5" /> 
   },
   { 
     name: "LinkedIn",
-    href: "https://linkedin.com/in/yourusername", 
+    href: "https://linkedin.com/in/abhishek-bisht1429",
     icon: <Linkedin className="w-5 h-5" /> 
   },
-  { 
-    name: "Twitter",
-    href: "https://twitter.com/yourusername", 
-    icon: <Twitter className="w-5 h-5" /> 
-  },
-  { 
-    name: "Instagram",
-    href: "https://instagram.com/yourusername", 
-    icon: <Instagram className="w-5 h-5" /> 
-  }
+  // {
+  //   name: "Twitter",
+  //   href: "https://twitter.com/yourusername",
+  //   icon: <Twitter className="w-5 h-5" />
+  // },
+  // {
+  //   name: "Instagram",
+  //   href: "https://instagram.com/yourusername",
+  //   icon: <Instagram className="w-5 h-5" />
+  // }
 ];
 
 const Footer = () => {
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="w-full border-t border-border/50 pt-6 mt-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Abhishek Bisht. Built with assistance of AI provided by <a target="_blank" href={lovable_link}>Loveable.dev</a>.
+                © {currentYear} Abhishek Bisht. Built with assistance from AI provided by <a target="_blank" href={lovable_link}>Loveable.dev</a>.
               </p>
 
               <p className="text-sm text-muted-foreground">

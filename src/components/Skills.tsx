@@ -7,38 +7,75 @@ import {
   Globe, 
   Wrench, 
   Layers,
+  FileTerminal,
+  Binary,
+  LayoutGrid,
+  BrainCircuit,
+  BrainCog,
+  Goal
 } from "lucide-react";
 
 const skillCategories = [
+  {
+    title: "Languages",
+    icon: <Globe className="w-5 h-5" />,
+    skills: ["C", "C++", "JAVA", "Python", "Javascript"],
+  },
+  {
+    title: "Scripting Languages",
+    icon: <FileTerminal className="w-5 h-5" />,
+    skills: ["Shell (Bash)", "PowerShell"],
+  },
   {
     title: "Frontend Development",
     icon: <Code className="w-5 h-5" />,
     skills: ["React", "TypeScript", "Next.js", "HTML/CSS", "Tailwind CSS"],
   },
   {
-    title: "UI/UX Design",
-    icon: <Palette className="w-5 h-5" />,
-    skills: ["Figma", "Adobe XD", "Responsive Design", "Prototyping", "Wireframing"],
-  },
-  {
     title: "Backend Development",
     icon: <Database className="w-5 h-5" />,
-    skills: ["Node.js", "Express", "MongoDB", "RESTful APIs", "GraphQL"],
+    skills: ["Django", "Spring-boot", "Micro-service Architecture",
+      "REST Architecture", "Node.js", "Express", "MongoDB", "RESTful APIs", "GraphQL"],
   },
   {
     title: "Tools & Deployment",
     icon: <Wrench className="w-5 h-5" />,
-    skills: ["Git", "GitHub", "Docker", "Vercel", "Netlify"],
+    skills: ["Git", "GitHub", "Docker", "CLion", "IntelliJ IDEA", "PyCharm", "WebStorm", "Postman"],
   },
   {
-    title: "CMS & Integrations",
-    icon: <Layers className="w-5 h-5" />,
-    skills: ["WordPress", "Contentful", "Strapi", "API Integration", "Webhooks"],
+    title: "Domain Specific Languages (DSLs)",
+    icon: <Goal className="w-5 h-5" />,
+    skills: ["make", "CMake", "Groovy"],
   },
   {
-    title: "Languages",
-    icon: <Globe className="w-5 h-5" />,
-    skills: ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
+    title: "System Programming",
+    icon: <Binary className="w-5 h-5" />,
+    skills: [
+      "Compiler (LLVM)", "LLVM-MLIR", "ONNX Runtime", "TCF-DAP Protocol", "Socket Programming",
+    ],
+  },
+  {
+    title: "Android App Development",
+    icon: <LayoutGrid className="w-5 h-5" />,
+    skills: [
+      "MVVM Architecture", "Android Multi-Threading Framework", "Gradle",
+    ],
+  },
+  {
+    title: "Machine Learning Concepts",
+    icon: <BrainCircuit className="w-5 h-5" />,
+    skills: [
+      "Neural Networks", "Convolutional Neural Networks (CNN)",
+      "Deep Q-Networks (DQN)",
+      "Multi-agent-Reinforce Learning (MARL)",
+    ],
+  },
+  {
+    title: "Machine Learning Libraries/Frameworks",
+    icon: <BrainCog className="w-5 h-5" />,
+    skills: [ "NumPy", "Pandas", "Scikit-learn", "Keras", "Tensorflow", "PyTorch",
+      "Jupyter", "Matplotlib", "ONNX",
+    ],
   },
 ];
 
