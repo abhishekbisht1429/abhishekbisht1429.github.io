@@ -43,7 +43,7 @@ const Navbar = () => {
           href="#home"
           className="text-xl md:text-2xl font-heading font-bold text-primary"
         >
-          YourName
+          Abhishek Bisht
         </a>
 
         {/* Desktop Navigation */}

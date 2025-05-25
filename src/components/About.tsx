@@ -11,18 +11,13 @@ const About = () => {
             <h2 className="section-title">About Me</h2>
             <div className="space-y-4 text-foreground/90">
               <p>
-                Hello! I'm a passionate developer with a strong foundation in web development and
-                a keen eye for design. I enjoy building things that live on the internet, whether
-                that be websites, applications, or anything in between.
+                Hello! I'm a passionate researcher and developer with a strong foundation in ...
               </p>
               <p>
-                My goal is to always build products that provide pixel-perfect, 
-                performant experiences. I am proficient in modern frontend 
-                technologies and frameworks, and I'm always looking to learn new things.
+                My goal is to ..., and I'm always looking to learn new things.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open-source projects, or enjoying outdoor activities.
+                When I'm not coding, ...
               </p>
               <div className="pt-4">
                 <Button asChild className="inline-flex items-center gap-2">
@@ -39,7 +34,7 @@ const About = () => {
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-primary/20">
               {/* Replace with your own image */}
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="/abhishek.jpeg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

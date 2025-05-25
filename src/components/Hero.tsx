@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container">
         <div className="flex flex-col items-center text-center space-y-6 animate-fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-foreground max-w-3xl">
-            Hi, I'm <span className="text-primary">Your Name</span>
+            Hi, I'm <span className="text-primary">Abhishek Bisht</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl">
             Web Developer & Designer creating beautiful digital experiences

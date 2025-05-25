@@ -1,6 +1,8 @@
 
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 
+const lovable_link = "https://lovable.dev/"
+
 const socialLinks = [
   { 
     name: "GitHub",
@@ -35,7 +37,7 @@ const Footer = () => {
             href="#home"
             className="text-xl font-heading font-bold text-primary"
           >
-            YourName
+            Abhishek Bisht
           </a>
           
           <div className="flex space-x-4">
@@ -56,7 +58,11 @@ const Footer = () => {
           <div className="w-full border-t border-border/50 pt-6 mt-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} YourName. All rights reserved.
+                © {currentYear} Abhishek Bisht. Built with assistance of AI provided by <a target="_blank" href={lovable_link}>Loveable.dev</a>.
+              </p>
+
+              <p className="text-sm text-muted-foreground">
+
               </p>
               
               <nav className="flex space-x-6 text-sm text-muted-foreground">
