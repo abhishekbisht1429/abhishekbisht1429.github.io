@@ -60,10 +60,10 @@ const Footer = () => {
               <p className="text-sm text-muted-foreground">
                 © {currentYear} Abhishek Bisht
               </p>
-              <p className="justify-center text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Built with assistance from AI provided by <a className="text-primary" target="_blank" href={lovable_link}>Loveable.dev</a>
               </p>
-              <p className="justify-center text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Last updated on May 30th 2025
               </p>
 
