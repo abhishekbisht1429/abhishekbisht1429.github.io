@@ -38,7 +38,7 @@ const About = () => {
             <h2 className="section-title">About Me</h2>
             <div className="space-y-4 text-foreground/90">
               <p>
-                Hello! I'm a passionate researcher and developer with a strong foundation in Computer Fundamentals.
+                Hello! I'm a passionate researcher and engineer with a strong foundation in Computer Fundamentals.
               </p>
               <p>
                  I wish to use my technical skills to contribute towards advancement our civilization. That is why I continue to learn new things  and aspire to be at the forefront of research in my domain.
