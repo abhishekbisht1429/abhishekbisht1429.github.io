@@ -99,7 +99,7 @@ const About = () => {
                   >
                     <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                       <h4 className="text-lg font-semibold">{item.position}</h4>
-                      <span className="text-sm text-muted-foreground">{item.date}</span>
+                      <span className="text-sm text-primary">{item.date}</span>
                     </div>
                     <p className="font-medium text-muted-foreground mb-1">{item.organization}</p>
                     <p className="text-sm text-foreground/80">{item.description}</p>
