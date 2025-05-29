@@ -70,19 +70,36 @@ const About = () => {
         </div>
         <div className="mt-12">
           <h3 className="text-2xl font-bold mb-6 text-center">Timeline</h3>
-          <div className="space-y-8 relative">
+          <div className="relative pl-2 md:pl-0">
             {/* Vertical line */}
-            <div className="absolute left-1/2 w-0.5 h-full bg-primary/20 -translate-x-1/2"></div>
+            <div className="absolute left-2 md:left-1/2 top-0 w-0.5 h-full bg-primary/20 -translate-x-1/2 md:-translate-x-1/2"></div>
+
             {/* Timeline items */}
             {timelineData.map((item, idx) => (
-                <div key={idx} className="relative flex items-center justify-center">
-                  {/* Circle */}
-                  <div className="absolute left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 z-10"></div>
-                  {/* Card */}
-                  <div className={`w-full md:w-1/2 p-6 bg-background rounded-lg shadow-sm border ${idx % 2 === 0 ? "md:mr-auto md:pr-16" : "md:ml-auto md:pl-16"}`}>
-                    <div className="flex justify-between items-start mb-2">
+                <div key={idx} className="relative mb-8">
+                  {/* Circle - Centered vertically */}
+                  <div className="
+                        absolute
+                        left-0 md:left-1/2
+                        top-1/2 -translate-y-1/2
+                        w-4 h-4 rounded-full bg-primary
+                        -translate-x-1/2 md:-translate-x-1/2
+                        z-10
+                        ">
+                  </div>
+
+                  {/* Card - Adjusted padding to eliminate gap */}
+                  <div
+                      className={`
+                        ml-0 md:ml-0
+                        ${idx % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}
+                        w-full md:w-[50%] lg:w-[50%]
+                        p-4 md:p-6 bg-background rounded-lg shadow-sm border
+                      `}
+                  >
+                    <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                       <h4 className="text-lg font-semibold">{item.position}</h4>
-                      <span className="text-primary text-sm text-muted-foreground">{item.date}</span>
+                      <span className="text-sm text-muted-foreground">{item.date}</span>
                     </div>
                     <p className="font-medium text-muted-foreground mb-1">{item.organization}</p>
                     <p className="text-sm text-foreground/80">{item.description}</p>
