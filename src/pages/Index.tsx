@@ -11,7 +11,7 @@ import Publications from "@/components/Publications";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "YourName | Personal Portfolio";
+    document.title = "Abhishek Bisht | Personal Portfolio";
     // Add dark mode to the document body
     document.documentElement.classList.add('dark');
   }, []);
