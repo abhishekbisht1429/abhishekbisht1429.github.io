@@ -1,55 +1,59 @@
 
 import ProjectCard from "./ProjectCard";
+import {ExternalLink} from "lucide-react";
+import {Button} from "@/components/ui/button.tsx";
+
+const more_url = "https://github.com/abhishekbisht1429?tab=repositories"
 
 const projects = [
-  {
-    title: "E-commerce Platform",
-    description: "A fully responsive e-commerce website with product filtering, search functionality, and a shopping cart built with React and Node.js.",
-    image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Portfolio Website",
-    description: "A modern portfolio website featuring a responsive design, dark mode, and animations. Built with Next.js and Tailwind CSS.",
-    image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Task Management App",
-    description: "A productivity application with task management, project organization, and statistics tracking.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "TypeScript", "Firebase"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Weather Dashboard",
-    description: "A weather application that displays current weather information and forecasts for locations worldwide.",
-    image: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
-    tags: ["JavaScript", "API", "CSS"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Recipe Finder",
-    description: "An application that helps users find recipes based on available ingredients, dietary restrictions, and cuisine preferences.",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["React", "API Integration", "Styled Components"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Fitness Tracker",
-    description: "A web app for tracking workouts, setting fitness goals, and monitoring progress with data visualization.",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["Vue.js", "Chart.js", "Express"],
-    demoUrl: "#",
-    githubUrl: "#"
-  }
+    {
+    "title": "ONNX-MLIR",
+    "description": "I contributed to the Xilinx fork of ONNX-MLIR, which is a compiler infrastructure for representing and lowering ONNX models in MLIR, enabling efficient deployment and optimization of machine learning models.",
+    "image": "onnx-mlir.png",
+    "tags": ["ONNX", "MLIR", "Compiler", "Machine Learning", "Open Source"],
+    "demoUrl": "#",
+    "githubUrl": "https://github.com/Xilinx/onnx-mlir"
+    },
+    {
+    "title": "PHR Storage and Sharing System",
+    "description": "A personal health record storage and sharing system using blockchain, searchable symmetric encryption, and IPFS for secure and efficient data management.",
+    "image": "phr_ss_img.png",
+    "tags": ["Blockchain", "IPFS", "Healthcare", "Security"],
+    "demoUrl": "#",
+    "githubUrl": "https://github.com/abhishekbisht1429/phr-ss-system"
+    },
+    {
+    "title": "PEKS for Cloud",
+    "description": "Provably secure public key encryption with keyword search for data outsourcing in cloud environments, enabling privacy-preserving data retrieval.",
+    "image": "peks_cloud.jpg",
+    "tags": ["Cloud Security", "Encryption", "Keyword Search", "C++"],
+    "demoUrl": "#",
+    "githubUrl": "https://github.com/abhishekbisht1429/peks-for-cloud"
+    },
+    {
+        "title": "Linux File Explorer",
+        "description": "A terminal based lightweight file explorer application for Linux environments, designed for efficient navigation and management of files and directories.",
+        "image": "file_explorer.png",
+        "tags": ["Linux", "File Explorer", "C++"],
+        "demoUrl": "#",
+        "githubUrl": "https://github.com/abhishekbisht1429/linux-file-explorer"
+    },
+    {
+        "title": "Video Emotion Recognition",
+        "description": "A project for predicting speaker emotions using multimodal data from videos, including audio and facial features, with deep learning models.",
+        "image": "video_emotion_recog.png",
+        "tags": ["Python", "Deep Learning", "Emotion Detection", "Multimodal"],
+        "demoUrl": "#",
+        "githubUrl": "https://github.com/research-works/video-emotion-recognition"
+      },
+      {
+        "title": "Sound Meter for PSLab Android",
+        "description": "Developed the sound meter functionality for the PSLab Android app, enabling real-time audio level measurement and analysis.",
+        "image": "ps_lab.png",
+        "tags": ["Android", "Sound Meter", "Science App", "Open Source"],
+        "demoUrl": "#",
+        "githubUrl": "https://github.com/fossasia/pslab-android"
+      }
 ];
 
 const Projects = () => {
@@ -68,6 +72,19 @@ const Projects = () => {
               <ProjectCard {...project} />
             </div>
           ))}
+        </div>
+        <div className="p-5 pt-0">
+          <Button asChild variant="secondary" size="default" className="w-full">
+            <a
+                href={more_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2"
+            >
+              <ExternalLink className="w-4 h-4" />
+              More Projects
+            </a>
+          </Button>
         </div>
       </div>
     </section>

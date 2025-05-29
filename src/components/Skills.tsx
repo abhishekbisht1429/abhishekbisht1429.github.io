@@ -14,6 +14,7 @@ import {
   BrainCog,
   Goal
 } from "lucide-react";
+import {Badge} from "@/components/ui/badge.tsx";
 
 const skillCategories = [
   {
@@ -27,25 +28,14 @@ const skillCategories = [
     skills: ["Shell (Bash)", "PowerShell"],
   },
   {
-    title: "Frontend Development",
-    icon: <Code className="w-5 h-5" />,
-    skills: ["React", "TypeScript", "Next.js", "HTML/CSS", "Tailwind CSS"],
-  },
-  {
-    title: "Backend Development",
-    icon: <Database className="w-5 h-5" />,
-    skills: ["Django", "Spring-boot", "Micro-service Architecture",
-      "REST Architecture", "Node.js", "Express", "MongoDB", "RESTful APIs", "GraphQL"],
+    title: "Domain Specific Languages (DSLs)",
+    icon: <Goal className="w-5 h-5" />,
+    skills: ["make", "CMake", "Groovy", "SQL", "LaTex"],
   },
   {
     title: "Tools & Deployment",
     icon: <Wrench className="w-5 h-5" />,
     skills: ["Git", "GitHub", "Docker", "CLion", "IntelliJ IDEA", "PyCharm", "WebStorm", "Postman"],
-  },
-  {
-    title: "Domain Specific Languages (DSLs)",
-    icon: <Goal className="w-5 h-5" />,
-    skills: ["make", "CMake", "Groovy"],
   },
   {
     title: "System Programming",
@@ -62,20 +52,26 @@ const skillCategories = [
     ],
   },
   {
-    title: "Machine Learning Concepts",
+    title: "Machine Learning",
     icon: <BrainCircuit className="w-5 h-5" />,
     skills: [
       "Neural Networks", "Convolutional Neural Networks (CNN)",
       "Deep Q-Networks (DQN)",
       "Multi-agent-Reinforce Learning (MARL)",
+      "NumPy", "Pandas", "Scikit-learn", "Keras", "Tensorflow", "PyTorch",
+      "Jupyter", "Matplotlib", "ONNX"
     ],
   },
   {
-    title: "Machine Learning Libraries/Frameworks",
-    icon: <BrainCog className="w-5 h-5" />,
-    skills: [ "NumPy", "Pandas", "Scikit-learn", "Keras", "Tensorflow", "PyTorch",
-      "Jupyter", "Matplotlib", "ONNX",
-    ],
+    title: "Backend Development",
+    icon: <Database className="w-5 h-5" />,
+    skills: ["Django", "Spring-boot", "Micro-service Architecture", "Postgres-SQL",
+      "REST Architecture", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Frontend Development",
+    icon: <Code className="w-5 h-5" />,
+    skills: ["React", "TypeScript", "Next.js", "HTML/CSS", "Tailwind CSS"],
   },
 ];
 
@@ -100,14 +96,13 @@ const Skills = () => {
                   {category.title}
                 </h3>
               </div>
-              <ul className="space-y-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>{skill}</span>
-                  </li>
+              <div className="flex flex-wrap gap-2 pt-2">
+                {category.skills.map((tag) => (
+                    <Badge key={tag} variant="secondary_large" className="px-2 py-1">
+                      {tag}
+                    </Badge>
                 ))}
-              </ul>
+              </div>
             </Card>
           ))}
         </div>

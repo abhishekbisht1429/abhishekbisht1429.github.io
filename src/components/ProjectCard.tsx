@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Code } from "lucide-react";
 
 export interface ProjectProps {
   title: string;
@@ -45,30 +45,16 @@ const ProjectCard = ({
       </CardContent>
       
       <CardFooter className="p-5 pt-0 gap-3">
-        {demoUrl && (
-          <Button asChild variant="default" size="sm" className="flex-1">
-            <a 
-              href={demoUrl} 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              Live Demo
-            </a>
-          </Button>
-        )}
-        
         {githubUrl && (
-          <Button asChild variant="outline" size="sm" className="flex-1">
+          <Button asChild variant="default" size="sm" className="flex-1">
             <a 
               href={githubUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1"
             >
-              <Github className="w-3.5 h-3.5" />
-              Code
+              <Code className="w-3.5 h-3.5" />
+              View Code
             </a>
           </Button>
         )}

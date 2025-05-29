@@ -58,12 +58,15 @@ const Footer = () => {
           <div className="w-full border-t border-border/50 pt-6 mt-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Abhishek Bisht. Built with assistance from AI provided by <a target="_blank" href={lovable_link}>Loveable.dev</a>.
+                © {currentYear} Abhishek Bisht
+              </p>
+              <p className="justify-center text-sm text-muted-foreground">
+                Built with assistance from AI provided by <a className="text-primary" target="_blank" href={lovable_link}>Loveable.dev</a>
+              </p>
+              <p className="justify-center text-sm text-muted-foreground">
+                Last updated on May 30th 2025
               </p>
 
-              <p className="text-sm text-muted-foreground">
-
-              </p>
               
               <nav className="flex space-x-6 text-sm text-muted-foreground">
                 <a href="#home" className="hover:text-primary transition-colors">
@@ -71,6 +74,9 @@ const Footer = () => {
                 </a>
                 <a href="#about" className="hover:text-primary transition-colors">
                   About
+                </a>
+                <a href="#publications" className="hover:text-primary transition-colors">
+                  Publications
                 </a>
                 <a href="#projects" className="hover:text-primary transition-colors">
                   Projects

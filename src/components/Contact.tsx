@@ -85,69 +85,69 @@ const Contact = () => {
             ))}
           </div>
           
-          <div className="lg:col-span-2 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <Card className="p-6 shadow-sm">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      required
-                      value={formState.name}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="Your email"
-                      required
-                      value={formState.email}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Your message"
-                    rows={5}
-                    required
-                    value={formState.message}
-                    onChange={handleChange}
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full sm:w-auto gap-2"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Sending..." : (
-                    <>
-                      <Send className="w-4 h-4" />
-                      Send Message
-                    </>
-                  )}
-                </Button>
-              </form>
-            </Card>
-          </div>
+          {/*<div className="lg:col-span-2 animate-slide-up" style={{ animationDelay: "0.3s" }}>*/}
+          {/*  <Card className="p-6 shadow-sm">*/}
+          {/*    <form onSubmit={handleSubmit} className="space-y-4">*/}
+          {/*      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">*/}
+          {/*        <div className="space-y-2">*/}
+          {/*          <label htmlFor="name" className="text-sm font-medium">*/}
+          {/*            Name*/}
+          {/*          </label>*/}
+          {/*          <Input*/}
+          {/*            id="name"*/}
+          {/*            name="name"*/}
+          {/*            placeholder="Your name"*/}
+          {/*            required*/}
+          {/*            value={formState.name}*/}
+          {/*            onChange={handleChange}*/}
+          {/*          />*/}
+          {/*        </div>*/}
+          {/*        <div className="space-y-2">*/}
+          {/*          <label htmlFor="email" className="text-sm font-medium">*/}
+          {/*            Email*/}
+          {/*          </label>*/}
+          {/*          <Input*/}
+          {/*            id="email"*/}
+          {/*            name="email"*/}
+          {/*            type="email"*/}
+          {/*            placeholder="Your email"*/}
+          {/*            required*/}
+          {/*            value={formState.email}*/}
+          {/*            onChange={handleChange}*/}
+          {/*          />*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*      */}
+          {/*      <div className="space-y-2">*/}
+          {/*        <label htmlFor="message" className="text-sm font-medium">*/}
+          {/*          Message*/}
+          {/*        </label>*/}
+          {/*        <Textarea*/}
+          {/*          id="message"*/}
+          {/*          name="message"*/}
+          {/*          placeholder="Your message"*/}
+          {/*          rows={5}*/}
+          {/*          required*/}
+          {/*          value={formState.message}*/}
+          {/*          onChange={handleChange}*/}
+          {/*        />*/}
+          {/*      </div>*/}
+          {/*      */}
+          {/*      <Button */}
+          {/*        type="submit" */}
+          {/*        className="w-full sm:w-auto gap-2"*/}
+          {/*        disabled={isSubmitting}*/}
+          {/*      >*/}
+          {/*        {isSubmitting ? "Sending..." : (*/}
+          {/*          <>*/}
+          {/*            <Send className="w-4 h-4" />*/}
+          {/*            Send Message*/}
+          {/*          </>*/}
+          {/*        )}*/}
+          {/*      </Button>*/}
+          {/*    </form>*/}
+          {/*  </Card>*/}
+          {/*</div>*/}
         </div>
       </div>
     </section>

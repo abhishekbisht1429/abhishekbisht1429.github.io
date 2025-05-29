@@ -14,11 +14,11 @@ const Hero = () => {
             Hi, I'm <span className="text-primary">Abhishek Bisht</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl">
-            Upcoming computer science doctoral researcher at Indiana University, Bloomington
+            Upcoming Computer Science PhD researcher at Indiana University, Bloomington
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Button asChild className="text-base">
-              <a href="#projects">View My Work</a>
+              <a href="#publications">View My Work</a>
             </Button>
             <Button asChild variant="outline" className="text-base">
               <a href="#contact">Contact Me</a>
