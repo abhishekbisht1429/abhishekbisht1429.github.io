@@ -44,7 +44,7 @@ const About = () => {
                  I wish to use my technical skills to contribute towards advancement our civilization. That is why I continue to learn new things  and aspire to be at the forefront of research in my domain.
               </p>
               <p>
-                Besides work, I am an astrophile and a huge admirer of PC games with aesthetic visuals and stunning stores. The Witcher 3 and
+                Besides work, I am an astrophile and a huge admirer of PC games with aesthetic visuals and stunning stories. The Witcher 3 and
                 Cyberpunk are on the top of my list.
               </p>
               <div className="pt-4">
