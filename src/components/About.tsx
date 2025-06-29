@@ -4,7 +4,7 @@ import { FileText } from "lucide-react";
 
 const timelineData = [
   {
-    date: "March 2024 - Present",
+    date: "March 2024 - June 2025",
     position: "Software Engineer II",
     organization: "Advanced Micro Devices (AMD)",
     description: "Worked on compiler for ML-Models to support various state-of-the-art models (including Windows Co-Pilot) on RyzenAI PCs",
