@@ -60,3 +60,11 @@ export async function fetchAndParseBibtex(filename: string): Promise<Publication
   }
 }
 
+export async function fetchUpdateDate() {
+  const url = 'https://api.github.com/repos/abhishekbisht1429/abhishekbisht1429.github.io/branches/main';
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+  const data = await res.json();
+  return new Date(data.commit.commit.author.date); // ISO date string
+}
+

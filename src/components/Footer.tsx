@@ -1,5 +1,6 @@
-
+import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import {fetchUpdateDate} from '../lib/utils';
 
 const lovable_link = "https://lovable.dev/"
 
@@ -28,6 +29,12 @@ const socialLinks = [
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const [updateDate, setUpdateDate] = useState(new Date(currentYear));
+
+  useEffect(() => {
+    fetchUpdateDate().then(setUpdateDate);
+  }, []);
   
   return (
     <footer className="bg-secondary py-8">
@@ -64,7 +71,7 @@ const Footer = () => {
                 Built with assistance from AI provided by <a className="text-primary" target="_blank" href={lovable_link}>Loveable.dev</a>
               </p>
               <p className="text-sm text-muted-foreground">
-                Last updated on May 30th 2025
+                Last updated on {updateDate.toDateString()}
               </p>
 
               
