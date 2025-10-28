@@ -42,17 +42,17 @@ const Contact = () => {
       value: "abhishekbisht1429@gmail.com",
       href: "mailto:abhishekbisht1429@gmail.com"
     },
-    {
-      icon: <Phone className="w-5 h-5 text-primary" />,
-      title: "Phone",
-      value: "+91 8979588935",
-      href: "tel:+918979588935"
-    },
+    // {
+    //   icon: <Phone className="w-5 h-5 text-primary" />,
+    //   title: "Phone",
+    //   value: "+91 8979588935",
+    //   href: "tel:+918979588935"
+    // },
     {
       icon: <MapPin className="w-5 h-5 text-primary" />,
       title: "Location",
-      value: "Hyderabad, India",
-      href: "https://maps.app.goo.gl/dd6Nywk2UYjsG3119"
+      value: "Bloomington, Indiana, USA",
+      href: "https://maps.app.goo.gl/EfCPvv9Px828CL8D9"
     }
   ];
 

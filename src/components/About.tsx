@@ -41,7 +41,7 @@ const About = () => {
                 Hello! I'm a passionate researcher and engineer with a strong foundation in Computer Fundamentals.
               </p>
               <p>
-                 I wish to use my technical skills to contribute towards advancement of our civilization. That is why I continue to learn new things  and aspire to be at the forefront of research in my domain.
+                 I wish to use my technical skills to contribute towards advancement of our civilization. That is why I continue to learn new things  and aspire to be at the forefront of computer science research.
               </p>
               <p>
                 Besides work, I am an astrophile and a huge admirer of PC games with aesthetic visuals and stunning stories. The Witcher 3 and

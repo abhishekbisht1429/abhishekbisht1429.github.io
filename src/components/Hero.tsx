@@ -14,7 +14,7 @@ const Hero = () => {
             Hi, I'm <span className="text-primary">Abhishek Bisht</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl">
-            Upcoming Computer Science PhD researcher at Indiana University, Bloomington
+            Computer Science PhD researcher at Indiana University, Bloomington
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Button asChild className="text-base">
