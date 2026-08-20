@@ -4,6 +4,12 @@ import { FileText } from "lucide-react";
 
 const timelineData = [
   {
+    date: "Aug 2025 - Present",
+    position: "PhD Student Researcher",
+    organization: "IUCVL, Indiana University Bloomington",
+    description: "Working on how machines can acquire useful traits of human vision",
+  },
+  {
     date: "March 2024 - June 2025",
     position: "Software Engineer II",
     organization: "Advanced Micro Devices (AMD)",
