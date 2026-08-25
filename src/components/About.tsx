@@ -44,10 +44,10 @@ const About = () => {
             <h2 className="section-title">About Me</h2>
             <div className="space-y-4 text-foreground/90">
               <p>
-                Hello! I'm a passionate researcher and engineer with a strong foundation in Computer Fundamentals.
+                Hello! I am currently working towards bringing useful features of human-like vision in machines. And therefore, I am also quite interested in understanding of the working of human brain.
               </p>
               <p>
-                 I wish to use my technical skills to contribute towards advancement of our civilization. That is why I continue to learn new things  and aspire to be at the forefront of computer science research.
+                 Currently, my focus is on building models that have semantic understanding of the visual world so that they can reason about it and make intelligent decisions hence.
               </p>
               <p>
                 Besides work, I am an astrophile and a huge admirer of PC games with aesthetic visuals and stunning stories. The Witcher 3 and
